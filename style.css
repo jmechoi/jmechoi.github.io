@@ -48,9 +48,9 @@ h2, h3 {
 
 .content {
 	margin-top: 200px;
-	padding: 20px;
+	padding: 100px 0px;
 	background-color: #4c4c4c;
-	height: 400px;
+	height: 100%;
 }
 
 .lead {
