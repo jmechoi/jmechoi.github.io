@@ -1,6 +1,59 @@
 body {
-	background-image: url("bg.jpg");
-	background-color: #000;
+	background: url(bg.jpg) no-repeat center fixed;
 	background-size: cover;
-	background-repeat: no-repeat;
+}
+
+p {
+	color: #D4D4D4;
+}
+
+.circle {
+    background-color: rgba(0, 0, 0, .5);
+    height: 200px;
+    width: 200px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin: 20px auto;
+}
+
+.circle:hover {
+	 background-color: #CDC1C5;
+}
+
+.col-centered {
+	margin: 0 auto;
+	float:none;
+}
+
+h1.main-head {
+	color:#fff;
+	font-size: 3em;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+
+h2, h3 {
+	color: #CDC1C5;
+}
+
+.header {
+	margin-top: 15%;
+	padding: 4%;
+    border: 2px solid #4c4c4c;
+    background-color: rgba(0,0,0,.5);
+}
+
+.header:hover {
+
+}
+
+.content {
+	margin-top: 200px;
+	padding: 20px;
+	background-color: #4c4c4c;
+	height: 400px;
+}
+
+.lead {
+	font-size: 1.2em;
+	color: #ffffff;
 }
