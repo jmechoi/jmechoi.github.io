@@ -3,6 +3,7 @@
 	<head>
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<title>j.mechoi</title>
 	</head>
 
@@ -33,7 +34,7 @@
 			<div class="row">
 				<div class="header col-lg-2 col-lg-offset-5 col-centered">
 					<h1 class="main-head text-center">j.mechoi</h1>
-					<p class="lead text-center">Work of Jamie Choi</p>
+					<p class="lead text-center">Works by Jamie Choi</p>
 				</div>
 			</div>
 
@@ -42,21 +43,52 @@
 				<p>Select your destination:</p>
 				
 				<div class="col-xs-12 col-md-4 col-lg-4">
-					<p class="circle"></p>
+					<p id="circle1" class="circle"></p>
 					<a class="btn btn-default" href="#" role="button">About Me »</a>
 			  	</div>
 			  	
 			  	<div class="col-xs-12 col-md-4 col-lg-4">
-			  		<p class="circle"></p>
+			  		<p id="circle2" class="circle"></p>
 			  		<a class="btn btn-default" href="#" role="button">My Portfolio »</a>
 			  	</div>
 			  	
 			  	<div class="col-xs-12 col-md-4 col-lg-4">
-			  		<p class="circle"></p>
+			  		<p id="circle3" class="circle"></p>
 			  		<a class="btn btn-default" href="#" role="button">Contact Me »</a>
 			  	</div>
 			</div>
 		</div>
+
+		<script>
+			$(document).ready(function(){
+				$( "#circle1" ).fadeTo( "slow", 0.15 );
+				$( "#circle2" ).fadeTo( "slow", 0.15 );
+				$( "#circle3" ).fadeTo( "slow", 0.15 );
+
+				$( "#circle1" ).mouseenter(function() {
+				  $( "#circle1" ).fadeTo( "slow", 1 );
+				  $( "#circle1" ).mouseleave(function() {
+				  $( "#circle1" ).fadeTo( "medium", 0.15 );
+				  });
+				});
+
+				$( "#circle2" ).mouseenter(function() {
+				  $( "#circle2" ).fadeTo( "slow", 1 );
+				  $( "#circle2" ).mouseleave(function() {
+				  $( "#circle2" ).fadeTo( "medium", 0.15 );
+				  });
+				});
+
+				$( "#circle3" ).mouseenter(function() {
+				  $( "#circle3" ).fadeTo( "slow", 1 );
+				  $( "#circle3" ).mouseleave(function() {
+				  $( "#circle3" ).fadeTo( "medium", 0.15 );
+				  });
+				});
+
+			});
+		</script>
+
 
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
