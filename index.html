@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Open+Sans" rel="stylesheet">
 		<title>j.mechoi</title>
 	</head>
 
@@ -19,7 +22,7 @@
 	          </button>
 	          <a class="navbar-brand" href="#">j.mechoi</a>
 	        </div>
-	        <div id="navbar" class="collapse navbar-collapse">
+	        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#">Home</a></li>
 	            <li><a href="#about">About</a></li>
@@ -30,68 +33,26 @@
 	      </div><!-- /.container -->
    		</nav>
 
-		<div class="container-fluid">
-			<div class="row">
-				<div class="header col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-1 col-centered">
-					<h1 class="main-head text-center">j.mechoi</h1>
-					<p class="lead text-center">Works by Jamie Choi</p>
-					<p class="lead text-center">[ Under Construction ]</p>
-				</div>
-			</div>
-
-			<div class="content row text-center">
-				<h2>Welcome to my site</h2>
-				<p>Select your destination:</p>
-				
-				<div class="col-xs-12 col-md-4 col-lg-4">
-					<p id="circle1" class="circle"></p>
-					<a class="btn btn-default" href="#" role="button">About Me »</a>
-			</div>
-			  	
-			  	<div class="col-xs-12 col-md-4 col-lg-4">
-			  		<p id="circle2" class="circle"></p>
-			  		<a class="btn btn-default" href="#" role="button">My Portfolio »</a>
-			  	</div>
-			  	
-			  	<div class="col-xs-12 col-md-4 col-lg-4">
-			  		<p id="circle3" class="circle"></p>
-			  		<a class="btn btn-default" href="#" role="button">Contact Me »</a>
-			  	</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>j.mechoi</h1>
+				<p>Welcome to my portfolio.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
 			</div>
 		</div>
 
-		<script>
-			$(document).ready(function(){
-				$( "#circle1" ).fadeTo( "slow", 0.15 );
-				$( "#circle2" ).fadeTo( "slow", 0.15 );
-				$( "#circle3" ).fadeTo( "slow", 0.15 );
+		<div class="main-lead text-center">
+			<div class="container">
+				<p><i class="fa fa-angle-double-down" style="font-size:5em; color: rgba(255, 255, 255, .5);"></i></p>
+			</div>
+		</div>
 
-				$( "#circle1" ).mouseenter(function() {
-				  $( "#circle1" ).fadeTo( "slow", 1 );
-				  $( "#circle1" ).mouseleave(function() {
-				  $( "#circle1" ).fadeTo( "medium", 0.15 );
-				  });
-				});
+		<div class="white-section text-center">
+			<div class="container">
+				<h2>Under Construction</h2>
+				<p>Coming soon.</p>
+			</div>
+		</div>
 
-				$( "#circle2" ).mouseenter(function() {
-				  $( "#circle2" ).fadeTo( "slow", 1 );
-				  $( "#circle2" ).mouseleave(function() {
-				  $( "#circle2" ).fadeTo( "medium", 0.15 );
-				  });
-				});
-
-				$( "#circle3" ).mouseenter(function() {
-				  $( "#circle3" ).fadeTo( "slow", 1 );
-				  $( "#circle3" ).mouseleave(function() {
-				  $( "#circle3" ).fadeTo( "medium", 0.15 );
-				  });
-				});
-
-			});
-		</script>
-
-
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
