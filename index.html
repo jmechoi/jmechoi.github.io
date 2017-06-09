@@ -35,8 +35,8 @@
    		
 
 		<div class="jumbotron">
-			<div class="container">
-				<h1>j.mechoi</h1>
+			<div class="hero-text container">
+				<h1><span class="underline">j.mechoi</span></h1>
 				<p>Welcome to my portfolio.</p>
 				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
 			</div>
@@ -57,6 +57,21 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    	$(window).scroll(function() {
+
+		    if ($(this).scrollTop()>0)
+		     {
+		        $('.main-lead').fadeOut();
+		        $('.hero-text').fadeOut();
+		     }
+		    else
+		     {
+		      $('.main-lead').fadeIn();
+		      $('.hero-text').fadeIn();
+		     }
+ 		});
+    </script>
 
 	</body>
 </html>
