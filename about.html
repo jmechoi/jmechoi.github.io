@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+		<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,600" rel="stylesheet">
+		<title>j.mechoi</title>
+	</head>
+
+	<body id="main">
+		<nav class="navbar navbar-fixed-top navbar-inverse">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navibar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">j.mechoi</a>
+	        </div>
+	        <div class="navbar-collapse collapse" id="navibar">
+	          <ul class="nav navbar-nav">
+	            <li><a href="index.html">Home</a></li>
+	            <li class="active"><a href="about.html">About</a></li>
+	            <li><a href="works.html">Works</a></li>
+	            <li><a href="contact.html">Contact</a></li>
+	          </ul>
+	        </div>
+	      </div>
+   		</nav>
+   		
+
+		<div class="jumbotron">
+			<div class="hero-text container text-center">
+				<h1><span class="underline">About</span></h1>
+				<p>Learn more about me.</p>
+			</div>
+		</div>
+
+		<div class="main-lead text-center">
+			<div class="container">
+				<p><i class="fa fa-angle-double-down" style="font-size:5em; color: rgba(255, 255, 255, .5);"></i></p>
+			</div>
+		</div>
+
+		<div class="pink-section text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="white-text">View My Resume</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p><a class="btn btn-primary btn-category" href="assets/files/Choi_Resume.pdf" target="_blank">Resume (PDF)</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="white-section text-center" id="web-projects">
+			<div class="container">
+				<div class="row">
+					<h2>About Me</h2>
+					<div class="divider"></div>
+				</div>
+
+				<div class="row">
+					<p class="lead">Hi, my name is <span class="pink">Jamie Choi</span>.</p>
+
+					<div class="img-crop"><p><img src="assets/img/profile.jpg" class="img-responsive profile-img" /></p></div>
+
+					<p>I recently graduated (May 2017) from George Mason University. I have earned my B.S. in Applied Information Technology with a minor in Business and a concentration in Web Development. I have about two years of experience working as an intern and now regular part-time Design &amp; Development assistant at <a href="http://www.designtlc.com" target="_blank">Design TLC, LLC</a>. I have led graphic design projects and also assisted in the management, development, and design of multiple WordPress sites. My current goal is to become a talented and knowledgable <span class="pink">front-end web developer</span> working as part of a team that delivers creative solutions.</p>
+					<p class="lead">If you're interested in working with me, <a href="mailto:jamie.choi93@gmail.com">contact me</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="blue-section text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="white-text">Visit my GitHub Profile to see samples of other projects &amp; code I've worked on...</h3>
+						<p class="lead light-text">Including ASP.NET, Java, PHP, and other languages.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p><a class="btn btn-primary btn-category" href="https://github.com/jmechoi" target="_blank">Github Profile</a></p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="white-section text-center">
+			<div class="container">
+				<div class="col-lg-12">
+					<h2>Contact Me</h2>
+					<div class="divider"></div>
+					<p>phone. <a href="tel:7037747005">7037747005</a><br/>
+					email. <a href="mailto:jamie.choi93@gmail.com">jamie.choi93@gmail.com</a><br/>
+					linkedin. <a href="https://www.linkedin.com/in/jamiejchoi/" target="_blank">jamiejchoi</a></p>
+				</div>
+			</div>
+		</div>
+		<!--https://stackoverflow.com/questions/40375093/change-navbar-color-on-scroll
+		https://stackoverflow.com/questions/20276166/how-do-i-make-my-navbar-change-css-class-upon-scrolling-past-an-anchor-point-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    	$(window).scroll(function() {
+
+		    if ($(this).scrollTop()>150)
+		     {
+		        $('.main-lead').fadeOut();
+		        $('.hero-text').fadeOut();
+		     }
+		    else 
+		     {
+		      $('.main-lead').fadeIn();
+		      $('.hero-text').fadeIn();
+		     }
+ 		});
+    </script>
+
+	</body>
+</html>
