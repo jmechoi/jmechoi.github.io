@@ -38,6 +38,10 @@ p.lead.light-text {
 	color: #f9f9f9;
 }
 
+p.gray {
+	color: rgba(59, 68, 76, .8);
+}
+
 .white-text {
 	color: #fff;
 }
@@ -259,6 +263,8 @@ a.btn.btn-primary:hover {
 	background-color: #eeefef;
 	padding-top: 5em;
 	padding-bottom: 5em;
+	margin-top:5em;
+	margin-bottom: 5em;
 }
 
 .my-work {
@@ -278,6 +284,10 @@ a.btn.btn-primary:hover {
 
 img.flyers {
 	max-height: 500px;
+}
+
+img.peri {
+	max-height: 300px;
 }
 
 a.btn.btn-primary.btn-category {
